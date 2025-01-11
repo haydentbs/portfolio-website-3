@@ -36,7 +36,7 @@ const projects = [
     title: 'ML and Data Cleaning Porject on Global WHO data',
     description: 'Cleaned and analysed global WHO data, adding in additioanl data from other sources to produce a model that predicts the life expectancy of country with an R^2 of 0.96',
     image: '/who_ml2.png?height=200&width=300',
-    repo: 'https://www.kaggle.com/code/haydentibbals/who-ml-v2',
+    github: 'https://www.kaggle.com/code/haydentibbals/who-ml-v2',
     skills: ['Python', 'Data Analysis', 'Machine Learning']
   },
 ]
