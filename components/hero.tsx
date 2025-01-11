@@ -10,7 +10,7 @@ export default function Hero() {
           Physics Graduate & Developer
         </h1>
         <p className="max-w-[700px] text-xl text-muted-foreground">
-          Exploring the intersection of physics and technology. Passionate about solving complex problems and creating innovative solutions.
+          Using data analysis and machine learning to solve real-world problems. Experienced in building predictive models and creating data-driven applications.
         </p>
       </div>
       <div className="flex gap-4 md:ml-12">
