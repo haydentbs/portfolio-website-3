@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="container grid items-center gap-6 px-4 pt-12 pb-8 md:gap-8 md:pt-16 md:pb-12">
       <div className="flex max-w-[980px] flex-col items-start gap-2 md:gap-3">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
-          Hello, I am Hayden <br className="hidden sm:inline" />
+          Hello, I am Hayden Tibbals <br className="hidden sm:inline" />
           Physics Graduate & Developer
         </h1>
         <p className="max-w-[700px] text-lg md:text-xl text-muted-foreground">
