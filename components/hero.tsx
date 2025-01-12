@@ -3,17 +3,17 @@ import SocialTags from './social-tags'
 
 export default function Hero() {
   return (
-    <section className="container grid items-center gap-8 pt-16 pb-12 md:py-20">
-      <div className="flex max-w-[980px] flex-col items-start gap-3 md:ml-12">
-        <h1 className="text-4xl font-extrabold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
+    <section className="container grid items-center gap-6 px-4 pt-12 pb-8 md:gap-8 md:pt-16 md:pb-12">
+      <div className="flex max-w-[980px] flex-col items-start gap-2 md:gap-3">
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
           Hello, I am Hayden <br className="hidden sm:inline" />
           Physics Graduate & Developer
         </h1>
-        <p className="max-w-[700px] text-xl text-muted-foreground">
+        <p className="max-w-[700px] text-lg md:text-xl text-muted-foreground">
           Using data analysis and machine learning to solve real-world problems. Experienced in building predictive models and creating data-driven applications.
         </p>
       </div>
-      <div className="flex gap-4 md:ml-12">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
         <a
           href="#projects"
           className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-6 py-2"
@@ -27,16 +27,16 @@ export default function Hero() {
           Contact Me
         </a>
       </div>
-      <div className="md:ml-12">
+      <div>
         <SocialTags />
       </div>
-      <div className="flex items-center gap-4 md:ml-12">
-        <div className="flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
-          <GraduationCap className="h-5 w-5" />
+      <div className="flex flex-wrap items-center gap-2 sm:gap-4">
+        <div className="flex items-center gap-2 bg-blue-100 text-blue-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-sm">
+          <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5" />
           <span>Physics Graduate</span>
         </div>
-        <div className="flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full">
-          <Atom className="h-5 w-5" />
+        <div className="flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-sm">
+          <Atom className="h-4 w-4 sm:h-5 sm:w-5" />
           <span>Tech Enthusiast</span>
         </div>
       </div>

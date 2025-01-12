@@ -63,8 +63,11 @@ export default function Background() {
       if (!ctx || !canvas) return
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       
+      // Adjust number of stars based on screen width
+      const starCount = window.innerWidth < 768 ? 40 : 100
+      
       // Draw stars
-      const stars = Array.from({ length: 100 }, () => ({
+      const stars = Array.from({ length: starCount }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: Math.random() * 1.5
@@ -108,26 +111,28 @@ export default function Background() {
       ctx.arc(canvas.width - 150, 120, 60, 0, Math.PI * 2)
       ctx.fill()
 
-      // More clouds with varied sizes and positions
-      const clouds = [
-        // Top layer clouds
+      // Adjust number of clouds based on screen width
+      const isMobile = window.innerWidth < 768
+      const clouds = isMobile ? [
+        // Fewer clouds for mobile
+        { x: canvas.width * 0.1, y: window.innerHeight * 0.1, width: 140, height: 35 },
+        { x: canvas.width * 0.5, y: window.innerHeight * 0.15, width: 160, height: 40 },
+        { x: canvas.width * 0.8, y: window.innerHeight * 0.08, width: 130, height: 35 },
+        { x: canvas.width * 0.2, y: window.innerHeight * 0.3, width: 150, height: 40 },
+        { x: canvas.width * 0.7, y: window.innerHeight * 0.35, width: 140, height: 35 }
+      ] : [
+        // Original cloud configuration for desktop
         { x: canvas.width * 0.1, y: window.innerHeight * 0.1, width: 180, height: 45 },
         { x: canvas.width * 0.5, y: window.innerHeight * 0.15, width: 250, height: 60 },
         { x: canvas.width * 0.8, y: window.innerHeight * 0.08, width: 190, height: 50 },
-        
-        // Middle layer clouds (further down)
         { x: canvas.width * 0.2, y: window.innerHeight * 0.3, width: 220, height: 50 },
         { x: canvas.width * 0.6, y: window.innerHeight * 0.35, width: 200, height: 55 },
         { x: canvas.width * 0.85, y: window.innerHeight * 0.28, width: 170, height: 45 },
-        
-        // Lower layer clouds
         { x: canvas.width * 0.15, y: window.innerHeight * 0.5, width: 180, height: 45 },
         { x: canvas.width * 0.45, y: window.innerHeight * 0.45, width: 220, height: 55 },
         { x: canvas.width * 0.75, y: window.innerHeight * 0.55, width: 190, height: 50 },
-        
-        // Additional lower clouds
         { x: canvas.width * 0.3, y: window.innerHeight * 0.65, width: 160, height: 40 },
-        { x: canvas.width * 0.7, y: window.innerHeight * 0.7, width: 200, height: 45 },
+        { x: canvas.width * 0.7, y: window.innerHeight * 0.7, width: 200, height: 45 }
       ]
 
       // Draw each cloud

@@ -46,30 +46,30 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="container flex flex-col items-center justify-center py-8 md:py-12 lg:py-12">
-      <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-6xl mb-12 text-center">Projects</h2>
-      <div className="grid gap-4 md:grid-cols-1 max-w-[1400px] w-full mx-auto px-4 md:px-8">
+    <section id="projects" className="container flex flex-col items-center justify-center py-6 md:py-12">
+      <h2 className="text-2xl md:text-3xl font-bold leading-tight tracking-tighter md:text-6xl mb-8 md:mb-12 text-center">Projects</h2>
+      <div className="grid gap-4 w-full max-w-[1400px] mx-auto px-4">
         {projects.map((project, index) => (
-          <div key={index} className="group relative overflow-hidden rounded-lg border border-border/40 bg-card p-8 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg">
-            <div className="flex flex-col md:flex-row gap-8">
-              <div className="md:w-1/2">
+          <div key={index} className="group relative overflow-hidden rounded-lg border border-border/40 bg-card p-4 md:p-8 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+              <div className="w-full md:w-1/2">
                 <Image
                   src={project.image}
                   alt={project.title}
                   width={600}
                   height={400}
-                  className="rounded-md object-cover w-full h-[300px]"
+                  className="rounded-md object-cover w-full h-[200px] md:h-[300px]"
                 />
               </div>
-              <div className="md:w-1/2 flex flex-col justify-center">
-                <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-                <p className="text-lg text-muted-foreground mb-6">{project.description}</p>
-                <div className="flex gap-4">
+              <div className="w-full md:w-1/2 flex flex-col justify-center">
+                <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">{project.title}</h3>
+                <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6">{project.description}</p>
+                <div className="flex gap-3 md:gap-4">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-10 px-6 py-2"
+                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 md:h-10 px-4 md:px-6 py-2"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
@@ -78,7 +78,7 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-10 px-6 py-2"
+                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-9 md:h-10 px-4 md:px-6 py-2"
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Demo
