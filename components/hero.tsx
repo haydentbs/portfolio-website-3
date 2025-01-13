@@ -10,7 +10,7 @@ export default function Hero() {
           Physics Graduate & Developer
         </h1>
         <p className="max-w-[700px] text-lg md:text-xl text-muted-foreground">
-          Using data analysis and machine learning to solve real-world problems. Experienced in building predictive models and creating data-driven applications.
+          Experienced in using data analysis and machine learning to solve real-world problems.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
