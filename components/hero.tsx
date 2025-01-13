@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex max-w-[980px] flex-col items-start gap-2 md:gap-3">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl lg:text-6xl">
           Hello, I am Hayden Tibbals <br className="hidden sm:inline" />
-          Physics Graduate & Developer
+          Physics Graduate & Data Scientist
         </h1>
         <p className="max-w-[700px] text-lg md:text-xl text-muted-foreground">
           Experienced in using data analysis and machine learning to solve real-world problems.
