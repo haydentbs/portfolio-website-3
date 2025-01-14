@@ -65,24 +65,28 @@ export default function Projects() {
                 <h3 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4">{project.title}</h3>
                 <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6">{project.description}</p>
                 <div className="flex gap-3 md:gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 md:h-10 px-4 md:px-6 py-2"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     GitHub
                   </a>
+                  )}
+                  {project.demo && (
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-9 md:h-10 px-4 md:px-6 py-2"
+                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-primary shadow-sm hover:bg-accent hover:text-accent-foreground text-primary-foreground h-9 md:h-10 px-4 md:px-6 py-2"
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Demo
                   </a>
+                  )}
                 </div>
               </div>
             </div>
