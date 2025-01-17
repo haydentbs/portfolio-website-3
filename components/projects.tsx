@@ -6,11 +6,19 @@ const projects = [
   {
     title: 'Reinforcement Learning for Cancer Treatment Plans',
     description: 'Developed a RL alggorithm alongside NHS Christie Hospital to optimise treatment plans for cancer patients',
-    image: '/pbt_2.png',
+    image: '/dashboard.png',
     skills: ['Python', 'Reinforcement Learning'],
     github: 'https://github.com/haydentbs/PBT_RL_GAMIFICATION',
     paper: '/pbt.pdf'
   },
+  {
+    title: 'Garmin Analytics and API Dashboard',
+    description: 'Designed a full stack Gamin smartwatch analytics dashboard within a Docker container. \n Data is pulled via API, stored in SQL databases and then input into a React frontend using local APIs to the SQL databases',
+    image: '/ivor_2.png',
+    skills: ['Python', 'React', 'SQL', 'Docker', 'TypeScript'],
+    github: 'https://github.com/haydentbs/Garmin-dashboard'
+  },
+
   {
     title: 'AI Negotiation App',
     description: 'Developed an AI negotiation app in a react framework using the OpenAI API. User can receive specialist advice for a situation and expert responses',
