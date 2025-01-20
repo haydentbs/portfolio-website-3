@@ -4,7 +4,7 @@ import { FaKaggle } from 'react-icons/fa';
 const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com/haydentbs', color: 'bg-[#333333]' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/hayden-tibbals', color: 'bg-[#0077B5]' },
-  { name: 'CV', icon: FileText, url: '/cv.pdf', color: 'bg-[#4CAF50]' },
+  { name: 'CV', icon: FileText, url: '/Tibbals_CV.pdf', color: 'bg-[#4CAF50]' },
   { name: 'Kaggle', icon: FaKaggle, url: 'https://www.kaggle.com/haydentibbals', color: 'bg-[#20BEFF]' },
 ]
 
