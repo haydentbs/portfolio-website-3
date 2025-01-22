@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, FileText } from 'lucide-react'
+import { trackClick } from '@/utils/analytics'
 
 const projects = [
   
@@ -78,22 +79,36 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 md:h-10 px-4 md:px-6 py-2"
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
-                  </a>
+                      onClick={() => trackClick(`${project.title} - GitHub`, project.github, 'github_link')}
+                      className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 md:h-10 px-4 md:px-6 py-2"
+                    >
+                      <Github className="mr-2 h-4 w-4" />
+                      GitHub
+                    </a>
                   )}
                   {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-primary shadow-sm hover:bg-accent hover:text-accent-foreground text-primary-foreground h-9 md:h-10 px-4 md:px-6 py-2"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
-                  </a>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => trackClick(`${project.title} - Demo`, project.demo, 'demo_link')}
+                      className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-primary shadow-sm hover:bg-accent hover:text-accent-foreground text-primary-foreground h-9 md:h-10 px-4 md:px-6 py-2"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Demo
+                    </a>
+                  )}
+                  {project.paper && (
+                    <a
+                      href={project.paper}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => trackClick(`${project.title} - Paper`, project.paper, 'paper_view')}
+                      className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-primary shadow-sm hover:bg-accent hover:text-accent-foreground text-primary-foreground h-9 md:h-10 px-4 md:px-6 py-2"
+                    >
+                      <FileText className="mr-2 h-4 w-4" />
+                      Paper
+                    </a>
                   )}
                 </div>
               </div>
