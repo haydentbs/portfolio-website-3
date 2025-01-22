@@ -1,3 +1,5 @@
+"use client"
+
 import { Github, Linkedin, FileText } from 'lucide-react'
 import { FaKaggle } from 'react-icons/fa';
 import { trackClick } from '@/utils/analytics';

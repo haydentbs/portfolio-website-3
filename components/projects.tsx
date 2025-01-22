@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import { ExternalLink, Github, FileText } from 'lucide-react'
 import { trackClick } from '@/utils/analytics'
