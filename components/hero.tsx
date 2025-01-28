@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
         <div className="flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-sm">
           <Atom className="h-4 w-4 sm:h-5 sm:w-5" />
-          <span>Tech Enthusiast</span>
+          <span>Data Analyst</span>
         </div>
       </div>
     </section>
