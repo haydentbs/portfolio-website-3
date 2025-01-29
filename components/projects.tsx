@@ -8,7 +8,7 @@ const projects = [
   
   {
     title: 'Reinforcement Learning for Cancer Treatment Plans',
-    description: 'Developed a RL alggorithm alongside NHS Christie Hospital to optimise treatment plans for cancer patients',
+    description: 'Developed a RL alggorithm alongside NHS Christie Hospital to optimise proton beam treatment plans for cancer patients',
     image: '/pbt.png',
     skills: ['Python', 'Reinforcement Learning'],
     github: 'https://github.com/haydentbs/PBT_RL_GAMIFICATION',
