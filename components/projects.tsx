@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: 'Garmin Analytics and API Dashboard',
-    description: 'Designed a full stack Garmin smartwatch analytics dashboard within a Docker container. Data is pulled via API, stored in SQL databases and then input into a React frontend using local APIs',
+    description: 'Designed a full stack Garmin smartwatch analytics dashboard within a Docker container. Data is pulled via API, stored in a SQL database and then input into a React frontend using local APIs with Flask',
     image: '/dashboard.png',
     skills: ['Python', 'React', 'SQL', 'Docker', 'TypeScript'],
     github: 'https://github.com/haydentbs/Garmin-dashboard'
